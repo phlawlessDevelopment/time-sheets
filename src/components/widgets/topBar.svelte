@@ -4,6 +4,6 @@
 
 <AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 	<svelte:fragment slot="lead">(app logo)</svelte:fragment>
-	(app name)
+	TimeSheets
 	<svelte:fragment slot="trail">(nav links)</svelte:fragment>
 </AppBar>

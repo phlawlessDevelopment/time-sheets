@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
-	import '../theme.css';
+	import '../theme.postcss';
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import TopBar from '../components/widgets/topBar.svelte';
 	import SideBar from '../components/widgets/sideBar.svelte';
@@ -27,6 +27,8 @@
 	<svelte:fragment slot="sidebarLeft"><SideBar /></svelte:fragment>
 	<!-- (sidebarRight) -->
 	<svelte:fragment slot="pageHeader"><PageHeader /></svelte:fragment>
-	<slot />
+	<div class="p-8">
+		<slot />
+	</div>
 	<svelte:fragment slot="pageFooter"><Footer /></svelte:fragment>
 </AppShell>
